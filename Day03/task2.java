@@ -1,3 +1,4 @@
+// Check if number is Prime or not 
 package Day03;
 
 import java.util.Scanner;
