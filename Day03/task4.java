@@ -1,4 +1,4 @@
-// Pallindrome
+// Pallindrome 
 package Day03;
 
 import java.util.Scanner;
