@@ -1,3 +1,4 @@
+// PRINT AN ARRAY
 package Day05;
 
 import java.util.Scanner;
