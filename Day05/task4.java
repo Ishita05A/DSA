@@ -15,7 +15,7 @@ public class task4 {
 
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0)
+            if (arr[i] > min)
                 ans = arr[i];
         }
         return ans;
