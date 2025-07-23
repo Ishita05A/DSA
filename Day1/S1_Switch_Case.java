@@ -34,7 +34,6 @@ public class S1_Switch_Case {
                 break;
         }
         sc.close();
-
     }
 
 }

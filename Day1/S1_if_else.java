@@ -2,7 +2,7 @@ package Day1;
 
 import java.util.Scanner;
 
-public class S2_if_else {
+public class S1_if_else {
     static void Grade(int n) {
         if (n >= 90)
             System.out.println("Grade A");
