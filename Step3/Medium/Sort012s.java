@@ -20,6 +20,7 @@ public class Sort012s {
             if(arr[mid] == 0){
                 swap(arr, mid, low);
                 low++;
+                mid++;
             }
             else if(arr[mid] == 1){
                 mid++;
