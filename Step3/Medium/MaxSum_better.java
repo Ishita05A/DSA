@@ -2,15 +2,13 @@ package Step3.Medium;
 
 import java.util.Scanner;
 
-public class KadanesAlgorithm_BruteForce {
-    static int maxSum(int[] arr){
+public class MaxSum_better {
+    static int max_sum(int[] arr){
         int max = 0;
         for(int i = 0; i<arr.length;i++){
+            int sum = 0;
             for(int j = i; j<arr.length;j++){
-                int sum = 0;
-                for(int k = i;k<=j;k++){
-                    sum+=arr[k];
-                }
+                sum+=arr[j];
                 max = Math.max(max, sum);
             }
         }
@@ -25,10 +23,8 @@ public class KadanesAlgorithm_BruteForce {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println(maxSum(arr));
+        System.out.println(max_sum(arr));
         sc.close();
-        
-
     }
     
 }
