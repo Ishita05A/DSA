@@ -18,12 +18,16 @@ public class DeleteTail {
         }
         System.out.println();
     }
-    static void delete_tail(Node head){
+    static Node delete_tail(Node head){
         Node temp = head;
+        if(head == null || head.next == null){
+            return null;
+        }
         while(temp.next.next != null){
             temp = temp.next;
         }
         temp.next =null;
+        return head;
     }
 
     public static void main(String[] args) {
@@ -35,7 +39,7 @@ public class DeleteTail {
         b.next = c;
         c.next = d;
         display(a);
-        delete_tail(a);
+        a=delete_tail(a);
         display(a);
     }
 }
