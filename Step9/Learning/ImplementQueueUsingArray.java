@@ -7,7 +7,7 @@ public class ImplementQueueUsingArray {
         int r = -1;
         int size = 0;
 
-        void push(int val) {
+        void add(int val) {
             if (size == arr.length) {
                 System.out.println("Queue is full!!");
                 return;
@@ -24,7 +24,7 @@ public class ImplementQueueUsingArray {
             size++;
         }
 
-        int pop() {
+        int remove() {
             if (size == 0) {
                 System.out.println("Queue is Empty !!");
                 return -1;
@@ -36,7 +36,7 @@ public class ImplementQueueUsingArray {
 
         }
 
-        int peek() {
+        int element() {
             if (size == 0) {
                 System.out.println("Queue is Empty");
                 return -1;
@@ -58,16 +58,16 @@ public class ImplementQueueUsingArray {
 
     public static void main(String[] args) {
         Queue q = new Queue();
-        System.out.println(q.pop());
-        q.push(4);
-        q.push(6);
-        q.push(8);
-        q.push(9);
-        q.push(1);
-        q.push(1);
+        System.out.println(q.remove());
+        q.add(4);
+        q.add(6);
+        q.add(8);
+        q.add(9);
+        q.add(1);
+        q.add(1);
         q.display();
-        System.out.println(q.pop());
-        System.out.println(q.peek());
+        System.out.println(q.remove());
+        System.out.println(q.element());
         System.out.println(q.isEmpty());
         System.out.println(q.size);
 
