@@ -31,6 +31,7 @@ public class ImplementLowerBound {
         int x = sc.nextInt();
 
         System.out.println(lowerBound(arr, x));
+        sc.close();
 
     }
     
