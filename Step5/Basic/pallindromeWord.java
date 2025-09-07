@@ -21,7 +21,7 @@ public class pallindromeWord {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Brackets");
+        System.out.println("Enter String");
         String str = sc.nextLine();
         String s = pallindrome(str);
         System.out.println(s);
